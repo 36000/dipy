@@ -23,8 +23,8 @@ cdef class BinaryStoppingCriterion(StoppingCriterion):
 
 cdef class ThresholdStoppingCriterion(StoppingCriterion):
     cdef:
-        double threshold
-        double[:, :, :] metric_map
+        public double threshold
+        public double[:, :, :] metric_map
     pass
 
 
